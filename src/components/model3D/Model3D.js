@@ -1,7 +1,10 @@
 import React, {useEffect, useState} from 'react';
 import styled from 'styled-components'
 import {useSelector} from "react-redux";
-import Rocket3D from "./Rocket3D/Rocket3D";
+import Rocket3D from "./rocket3d/Rocket3D";
+import Controls from "./controls/Controls";
+import Hint from "./hint/Hint";
+import Back from "./back/Back";
 
 const rocketsURL = [
     {
@@ -52,6 +55,9 @@ const Model3D = () => {
     return (
         <Container move3d={move3d}>
             <Rocket3D url={url} pointlight={rocketsURL[id].pointLight} ambientlight={rocketsURL[id].ambientLight} intensity={rocketsURL[id].intensity} scale={rocketsURL[id].scale} positionY={rocketsURL[id].positionY} />
+            <Controls/>
+            <Hint/>
+            <Back/>
         </Container>
     );
 };

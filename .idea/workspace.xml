@@ -1,8 +1,148 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9bf67087-242a-4970-9134-b1b8abe87a9b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/model3D/Model3D.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/model3D/Model3D.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/model3D/Rocket3D/Rocket3D.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/model3D/rocket3d/Rocket3D.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1gHZPX3P4dh7cbORKmwxdoCyuFl" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.3.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Łukasz\Desktop\space\public" />
+      <recent name="C:\Users\Łukasz\Desktop\space\src\components\mars\model\rocket" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Łukasz\Desktop\space\src\components\model3D\rocket3d" />
+      <recent name="C:\Users\Łukasz\Desktop\space\src\components\model3D\hint" />
+      <recent name="C:\Users\Łukasz\Desktop\space\src\components\model3D\controls" />
+      <recent name="C:\Users\Łukasz\Desktop\space\src\components\model3D" />
+      <recent name="C:\Users\Łukasz\Desktop\space\public\rockets\falconHeavy" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.npm start">
+    <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
+    <configuration name="npm start" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9bf67087-242a-4970-9134-b1b8abe87a9b" name="Default Changelist" comment="" />
+      <created>1597773454177</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1597773454177</updated>
+      <workItem from="1597773455379" duration="1815000" />
+      <workItem from="1597822696223" duration="2072000" />
+      <workItem from="1597827358001" duration="1833000" />
+      <workItem from="1597832498357" duration="4540000" />
+      <workItem from="1597841719933" duration="3876000" />
+      <workItem from="1597846204073" duration="2579000" />
+      <workItem from="1597860781693" duration="21000" />
+      <workItem from="1597860818558" duration="77000" />
+      <workItem from="1597860910282" duration="3354000" />
+      <workItem from="1597866711480" duration="784000" />
+      <workItem from="1597902630789" duration="3268000" />
+      <workItem from="1597916718405" duration="3193000" />
+      <workItem from="1597925414959" duration="7880000" />
+      <workItem from="1597953478425" duration="801000" />
+      <workItem from="1597954330720" duration="196000" />
+      <workItem from="1597999357094" duration="3173000" />
+      <workItem from="1598006329309" duration="3878000" />
+      <workItem from="1598017676109" duration="9173000" />
+      <workItem from="1598028226527" duration="2129000" />
+      <workItem from="1598255855415" duration="4934000" />
+      <workItem from="1598261730672" duration="3118000" />
+      <workItem from="1598289960364" duration="5811000" />
+      <workItem from="1598304935739" duration="4639000" />
+      <workItem from="1598383195183" duration="720000" />
+      <workItem from="1598457287958" duration="5953000" />
+      <workItem from="1598514461870" duration="957000" />
+      <workItem from="1598541206066" duration="1777000" />
+      <workItem from="1598543120773" duration="433000" />
+      <workItem from="1598612187123" duration="3587000" />
+      <workItem from="1598641172703" duration="3954000" />
+      <workItem from="1598694501647" duration="6970000" />
+      <workItem from="1598778078414" duration="9551000" />
+      <workItem from="1598825579915" duration="2890000" />
+      <workItem from="1598863355798" duration="9223000" />
+      <workItem from="1598873166127" duration="531000" />
+      <workItem from="1598896458760" duration="3495000" />
+      <workItem from="1598909558810" duration="2998000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1597775100734">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597775100734" />
+    <state x="873" y="45" width="998" height="952" key="SettingsEditor" timestamp="1597844973543">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="873" y="45" width="998" height="952" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1597844973543" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1598257917462">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1598257917462" />
+    <state x="143" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1598613795505">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="143" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1598306555605" />
+    <state x="143" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1598613795505" />
   </component>
 </project>
