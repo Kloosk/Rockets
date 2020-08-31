@@ -1,0 +1,8 @@
+export { changeSlideNext } from './slide/slideActions'
+export { changeSlidePrev } from './slide/slideActions'
+export { changePhotoNum } from './photo/photoActions'
+export { wayToMove } from './way/wayActions'
+export { moveToDsc } from './move/moveAction'
+export { moveToMain } from './move/moveAction'
+export { moveUp } from './move3d/move3dAction'
+export { moveDown } from './move3d/move3dAction'

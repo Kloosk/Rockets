@@ -1,0 +1,1 @@
+export const CHANGE_PHOTO_NUM = 'CHANGE_PHOTO_NUM';
