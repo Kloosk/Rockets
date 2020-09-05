@@ -34,7 +34,7 @@ const Btn = styled.button`
   margin: 0 2px;
 `;
 
-const Controls = () => {
+const Controls = ({name}) => {
     const dispatch = useDispatch();
     const setLightAdd = () => {
         dispatch(lightAdd());
@@ -43,10 +43,15 @@ const Controls = () => {
         dispatch(lightSub());
     };
     const setScaleAdd = () => {
-      dispatch(scaleAdd());
+        if(name === 'starship'){
+        dispatch(scaleAdd(0,true))
+    }else dispatch(scaleAdd());
     };
     const setScaleSub = () => {
-      dispatch(scaleSub());
+        if(name === 'starship'){
+            dispatch(scaleSub(0,true))
+        }else dispatch(scaleSub());
+
     };
     return (
         <Container>

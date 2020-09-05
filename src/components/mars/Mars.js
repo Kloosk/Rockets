@@ -5,32 +5,45 @@ import styled from 'styled-components'
 import Nav from "../header/nav/Nav";
 import earth_map from "./images/earth_map.jpg";
 import mars_map from "./images/mars.jpg"
-import sun_map from "./images/sun.jpg"
 import {GLTFLoader} from "three/examples/jsm/loaders/GLTFLoader";
+import Description from "./Description";
+import Title from "./Title";
+import Btn from "./Btn";
 const Container = styled.div`
   width: 100vw;
   height: 100vh;
   background-color: #0D0D0D;
+  overflow-y: auto;
+  overflow-x: hidden;
+`;
+const Flex = styled.div`
+  display: flex;
+  min-height: 100%;
+  width: 100%;
+  padding: 15px;
+`;
+const Missionmars = styled.div`
+  overflow-y: auto;
+  margin-top: 10vh;
+  padding: 30px 0 40px 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 `;
 const CanvasStyled = styled(Canvas)`
-   width: 100%;
-   height: 90%;
+
 `;
-const RocketModel = () => {
-    const [model,setModel] = useState();
-    useEffect(() => {
-     new GLTFLoader().load('/rockets/falcon9/scene.gltf',setModel);
-    },[]);
-    return (
-       model ? <primitive object={model.scene}></primitive> : null
-    )
-};
 const Mars = () => {
     function Sphere(props) {
         const texture = useMemo(() => new THREE.TextureLoader().load(props.url), [props.url]);
         const mesh = useRef();
         useFrame(() => (mesh.current.rotation.y += props.rot));
-
         return (
             <mesh
                 {...props}
@@ -40,16 +53,48 @@ const Mars = () => {
             </mesh>
         )
     }
+    const RocketModel = () => {
+        const [model,setModel] = useState();
+        const mesh = useRef();
+        const move = () => {
+            if(mesh.current.position.x <= 2){
+                mesh.current.position.x += 0.006;
+            }
+        };
+        const rotate = () => {
+            if(mesh.current.rotation.z >= -0.5 && mesh.current.position.x < 1){
+                mesh.current.rotation.z -= 0.01;
+            }
+            else if(mesh.current.position.x > 1.7 && mesh.current.rotation.z < 0 && mesh.current.position.x < 2){
+                mesh.current.rotation.z += 0.01;
+            }
+        };
+
+        useFrame(() =>(model && rotate()));
+        useFrame(() =>(model && move()));
+        useEffect(() => {
+            new GLTFLoader().load('/rockets/falcon9/scene.gltf',setModel);
+        },[]);
+        return (
+            model ? <primitive ref={mesh} position={[-2, 0.5, 0]} scale={[0.04,0.04,0.04]} object={model.scene}></primitive> : null
+        )
+    };
     return (
         <Container>
             <Nav/>
-            <CanvasStyled camera={{ fov: 75, position: [0, 0, 11]}}>
-                <pointLight position={[-4, 6.5, 11]}/>
-                <Sphere position={[-4, 6.5, 2]} url={sun_map} rot={0.001}/>
-                <Sphere position={[-2, 3, 0]} url={earth_map} rot={0.002}/>
-                <Sphere position={[2,-1,1]} url={mars_map} rot={0.002}/>
-                <RocketModel/>
-            </CanvasStyled>
+            <Flex>
+                <Description/>
+                <Missionmars>
+                    <Title/>
+                    <CanvasStyled camera={{ fov: 35, position: [0, 45, 30000]}}>
+                        <pointLight position={[0, 0, 10]}/>
+                        <RocketModel/>
+                        <Sphere position={[-2, 0, 0]} url={earth_map} rot={0.002}/>
+                        <Sphere position={[2,0,1]} url={mars_map} rot={0.002}/>
+                    </CanvasStyled>
+                    <Btn/>
+                </Missionmars>
+            </Flex>
         </Container>
     );
 };

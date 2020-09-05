@@ -7,12 +7,24 @@ const initialState = {
 const scaleSetReducer = (state=initialState,action) => {
     switch (action.type) {
         case SCALE_ADD:{
+            if(action.starship){
+                return{
+                    ...state,
+                    value: state.value+0.01
+                }
+            }
             return{
                 ...state,
                 value: state.value+0.5
             }
         }
         case SCALE_SUB:{
+            if(action.starship && state.value > 0.01){
+                return{
+                    ...state,
+                    value: state.value-0.01
+                }
+            }
             if(state.value > 1){
                 return{
                     ...state,

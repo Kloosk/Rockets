@@ -1,13 +1,15 @@
 import {SCALE_ADD,SCALE_SET,SCALE_SUB} from "./scaleTypes";
 
-export const scaleAdd = () => {
+export const scaleAdd = (v=0,starship) => {
  return{
-     type: SCALE_ADD
+     type: SCALE_ADD,
+     starship: starship
  }
 };
-export const scaleSub = () => {
+export const scaleSub = (v=0,starship) => {
     return{
-        type: SCALE_SUB
+        type: SCALE_SUB,
+        starship: starship
     }
 };
 export const scaleSet = (v=0) => {

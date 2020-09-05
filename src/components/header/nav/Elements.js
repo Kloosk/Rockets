@@ -1,4 +1,4 @@
-import React, {useRef} from 'react';
+import React, {useState} from 'react';
 import styled from "styled-components";
 import {Link} from "react-router-dom";
 
@@ -43,23 +43,27 @@ const Href = styled(Link)`
   color: #D9D9D9;
   padding: 0 5px;
   transition: all 0.2s ease-in;
-  border-right: 1px solid #0D0D0D;
-  border-left: 1px solid #0D0D0D;
 `;
 const Elements = () => {
-    const listRef = useRef(null);
-    const handleClick = e => {
-       listRef.current.childNodes.forEach(el => {
-            el.childNodes[0].style.borderLeft = "1px solid #0D0D0D";
-            el.childNodes[0].style.borderRight = "1px solid #0D0D0D";
-        });
-       e.target.style.borderLeft = "1px solid #D9D9D9";
-       e.target.style.borderRight = "1px solid #D9D9D9";
+    const [current,setCurrent] = useState(true);
+    const [currentMars,setCurrentMars] = useState(false);
+    const handleClickRoc = () => {
+        setCurrentMars(false);
+        setCurrent(true);
+
+    };
+    const handleClickMars = () => {
+        setCurrent(false);
+        setCurrentMars(true);
+    };
+    const styles = {
+        borderRight: '1px solid #D9D9D9',
+        borderLeft: '1px solid #D9D9D9'
     };
     return (
-        <Ul ref={listRef}>
-            <Li><Href onClick={handleClick} style ={{borderRight: "1px solid #D9D9D9", borderLeft: "1px solid #D9D9D9"}} to="/">ROCKETS</Href></Li>
-            <Li><Href onClick={handleClick} to="/mars">MARS</Href></Li>
+        <Ul>
+            <Li onClick={handleClickRoc} ><Href to="/" style={current ? styles : null}>ROCKETS</Href></Li>
+            <Li onClick={handleClickMars} ><Href to="/mars" style={currentMars ? styles : null}>MARS</Href></Li>
         </Ul>
     );
 };

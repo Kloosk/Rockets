@@ -11,6 +11,7 @@ import {
 } from "react-router-dom";
 import Mars from "./components/mars/Mars";
 import Model3D from "./components/model3D/Model3D";
+import ViewMars from "./components/viewmars/ViewMars";
 
 
 const Container = styled.div`
@@ -31,6 +32,9 @@ const App = () => {
                     </Route>
                     <Route path="/mars">
                         <Mars/>
+                    </Route>
+                    <Route path="/view">
+                        <ViewMars/>
                     </Route>
                 </Switch>
             </Container>

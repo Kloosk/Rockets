@@ -55,7 +55,7 @@ const Model3D = () => {
     return (
         <Container move3d={move3d}>
             <Rocket3D url={url} pointlight={rocketsURL[id].pointLight} ambientlight={rocketsURL[id].ambientLight} intensity={rocketsURL[id].intensity} scale={rocketsURL[id].scale} positionY={rocketsURL[id].positionY} />
-            <Controls/>
+            <Controls name={rocketsURL[id].name}/>
             <Hint/>
             <Back/>
         </Container>
