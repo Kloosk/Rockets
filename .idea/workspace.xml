@@ -3,19 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9bf67087-242a-4970-9134-b1b8abe87a9b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/arrows/Arrows.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/arrows/Arrows.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/nav/Elements.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/nav/Elements.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/slide/LeftSide.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/slide/LeftSide.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/mars/Btn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mars/Btn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/mars/Description.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mars/Description.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/mars/Mars.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mars/Mars.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/model3D/Model3D.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/model3D/Model3D.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/model3D/back/Back.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/model3D/back/Back.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/model3D/rocket3d/Rocket3D.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/model3D/rocket3d/Rocket3D.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/viewmars/ViewMars.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/viewmars/ViewMars.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/rootReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/rootReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +132,7 @@
       <workItem from="1599405937185" duration="3254000" />
       <workItem from="1599415389979" duration="207000" />
       <workItem from="1599421315001" duration="2522000" />
-      <workItem from="1599462912240" duration="5270000" />
+      <workItem from="1599462912240" duration="7071000" />
     </task>
     <servers />
   </component>
