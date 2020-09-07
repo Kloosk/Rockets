@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 import {useDispatch, useSelector} from "react-redux";
-import {changeSlidePrev, changeSlideNext, changePhotoNum, wayToMove} from "../../../redux";
+import {changeSlidePrev, changeSlideNext, changePhotoNum, wayToMove, loadOff} from "../../../redux";
 
 const LeftArrow = styled.div`
   z-index: 3;
@@ -51,6 +51,7 @@ const Arrows = () => {
             clickBefore = true;
             dispatch(changeSlidePrev());
             dispatch(wayToMove(false));
+            dispatch(loadOff());
             setTimeout(() => {
                 dispatch(changePhotoNum());
                 document.getElementById(numOfPhoto).style.border="none";
@@ -66,6 +67,7 @@ const Arrows = () => {
             clickBefore = true;
             dispatch(changeSlideNext());
             dispatch(wayToMove(true));
+            dispatch(loadOff());
             setTimeout(() => {
                 dispatch(changePhotoNum());
                 document.getElementById(numOfPhoto).style.border="none";

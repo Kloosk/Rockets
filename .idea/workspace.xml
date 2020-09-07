@@ -3,16 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="9bf67087-242a-4970-9134-b1b8abe87a9b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/arrows/Arrows.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/arrows/Arrows.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/header/nav/Elements.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/nav/Elements.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/slide/LeftSide.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/slide/LeftSide.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/mars/Btn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mars/Btn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/mars/Description.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mars/Description.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/mars/Mars.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mars/Mars.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/model3D/Model3D.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/model3D/Model3D.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/model3D/controls/Controls.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/model3D/controls/Controls.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/model3D/back/Back.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/model3D/back/Back.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/model3D/rocket3d/Rocket3D.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/model3D/rocket3d/Rocket3D.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/scale/scaleActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/scale/scaleActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/scale/scaleReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/scale/scaleReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/viewmars/ViewMars.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/viewmars/ViewMars.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/rootReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/rootReducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,11 +56,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Łukasz\Desktop\space\src\components\loading" />
       <recent name="C:\Users\Łukasz\Desktop\space\public" />
       <recent name="C:\Users\Łukasz\Desktop\space\src\components" />
       <recent name="C:\Users\Łukasz\Desktop\space\src\viewmars\img" />
       <recent name="C:\Users\Łukasz\Desktop\space\src" />
-      <recent name="C:\Users\Łukasz\Desktop\space\src\components\mars\viewmars\img" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Łukasz\Desktop\space\public" />
@@ -137,7 +140,11 @@
       <workItem from="1599205101706" duration="749000" />
       <workItem from="1599239498743" duration="8873000" />
       <workItem from="1599249899630" duration="69000" />
-      <workItem from="1599319084591" duration="5867000" />
+      <workItem from="1599319084591" duration="9753000" />
+      <workItem from="1599405937185" duration="3254000" />
+      <workItem from="1599415389979" duration="207000" />
+      <workItem from="1599421315001" duration="2522000" />
+      <workItem from="1599462912240" duration="5270000" />
     </task>
     <servers />
   </component>
@@ -145,9 +152,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1597775100734">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2610" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1599407156016">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
+    <state x="2610" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1599407156016" />
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597775100734" />
     <state x="873" y="45" width="998" height="952" key="SettingsEditor" timestamp="1597844973543">
       <screen x="0" y="0" width="1920" height="1040" />

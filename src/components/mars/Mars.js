@@ -13,17 +13,14 @@ const Container = styled.div`
   width: 100vw;
   height: 100vh;
   background-color: #0D0D0D;
-  overflow-y: auto;
-  overflow-x: hidden;
 `;
 const Flex = styled.div`
   display: flex;
-  min-height: 100%;
+  height: 90%;
   width: 100%;
   padding: 15px;
 `;
 const Missionmars = styled.div`
-  overflow-y: auto;
   margin-top: 10vh;
   padding: 30px 0 40px 0;
   position: fixed;
@@ -86,7 +83,7 @@ const Mars = () => {
                 <Description/>
                 <Missionmars>
                     <Title/>
-                    <CanvasStyled camera={{ fov: 35, position: [0, 45, 30000]}}>
+                    <CanvasStyled camera={{ fov: 35, position: [0, 0, 11]}}>
                         <pointLight position={[0, 0, 10]}/>
                         <RocketModel/>
                         <Sphere position={[-2, 0, 0]} url={earth_map} rot={0.002}/>

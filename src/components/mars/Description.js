@@ -6,7 +6,39 @@ const Container = styled.article`
   height: 100%;
   display: flex;
   flex-direction: column;
-  padding: 10px 0 10px 25px;
+  padding: 10px 25px 25px 25px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  ::-webkit-scrollbar {
+  width: 11px;
+  height: 11px;
+}
+::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+}
+::-webkit-scrollbar-thumb {
+  background: #e1e1e1;
+  border: 0 none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+::-webkit-scrollbar-track {
+  background: #0D0D0D;
+  border: 0 none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #666666;
+}
+::-webkit-scrollbar-track:active {
+  background: #787878;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
 `;
 const H1 = styled.h1`
   font-size: 2rem;

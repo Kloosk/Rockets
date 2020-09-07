@@ -20,7 +20,7 @@ const Btn = () => {
     return (
         <Href to="/view">
             <ViewBtn>
-               MARS
+               SURFACE
             </ViewBtn>
         </Href>
     );

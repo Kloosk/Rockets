@@ -6,6 +6,7 @@ import moveToReducer from "./move/moveReducer";
 import move3dReducer from "./move3d/move3dReducer";
 import lightSetReducer from "./light/lightReducer";
 import scaleSetReducer from "./scale/scaleReducer";
+import loadReducer from "./loading/loadingReducer";
 
 const rootReducer = combineReducers({
    slide: changeSlideReducer,
@@ -14,7 +15,8 @@ const rootReducer = combineReducers({
    move: moveToReducer,
    move3d: move3dReducer,
    light: lightSetReducer,
-   scale: scaleSetReducer
+   scale: scaleSetReducer,
+   load: loadReducer
 });
 
 export default rootReducer

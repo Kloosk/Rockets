@@ -3,12 +3,14 @@ import { Canvas, extend, useThree, useFrame } from "react-three-fiber";
 import {CubeTextureLoader} from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import styled from "styled-components";
+import BackBtn from "./BackBtn";
 
 extend({ OrbitControls });
 
 const CanvasStyled = styled(Canvas)`
     width: 100vw;
     height: 100vh;
+    cursor: pointer;
 `;
 
 const CameraControls = () => {
@@ -24,6 +26,7 @@ const CameraControls = () => {
             ref={controls}
             args={[camera, domElement]}
             enableZoom={false}
+            autoRotate
         />
     );
 };
@@ -46,10 +49,13 @@ function SkyBox() {
 
 function ViewMars() {
     return (
-        <CanvasStyled>
-            <CameraControls />
-            <SkyBox />
-        </CanvasStyled>
+        <>
+            <BackBtn/>
+            <CanvasStyled>
+                <CameraControls />
+                <SkyBox />
+            </CanvasStyled>
+        </>
     );
 }
 

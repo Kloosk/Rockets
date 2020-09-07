@@ -22,7 +22,7 @@ const Controls = () => {
        orbitRef.current.update();
     });
     return(
-        <orbitControls args={[camera,gl.domElement]} ref={orbitRef}/>
+        <orbitControls args={[camera,gl.domElement]} autoRotate ref={orbitRef}/>
         )
 };
 

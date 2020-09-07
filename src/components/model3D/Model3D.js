@@ -1,10 +1,11 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useState,Suspense} from 'react';
 import styled from 'styled-components'
 import {useSelector} from "react-redux";
-import Rocket3D from "./rocket3d/Rocket3D";
 import Controls from "./controls/Controls";
 import Hint from "./hint/Hint";
 import Back from "./back/Back";
+import Loading from "../loading/Loading";
+const Rocket3D = React.lazy(() => import('./rocket3d/Rocket3D'));
 
 const rocketsURL = [
     {
@@ -44,17 +45,19 @@ const Container = styled.div`
   height: 100vh;
   transition: transform 2s ease;
   transform: ${props => props.move3d ? `translateY(-200vh)` : `translateY(-100vh)`};
+  background-color: #0D0D0D;
 `;
 const Model3D = () => {
     const [url,setUrl] = useState(`/rockets/${rocketsURL[0].name}/scene.gltf`);
     const move3d = useSelector(state => state.move3d.move);
     const id = useSelector(state => state.slide.numOfSlide);
+    const load = useSelector(state => state.load.loading);
     useEffect(() => {
         setUrl(`/rockets/${rocketsURL[id].name}/scene.gltf`);
     },[id]);
     return (
         <Container move3d={move3d}>
-            <Rocket3D url={url} pointlight={rocketsURL[id].pointLight} ambientlight={rocketsURL[id].ambientLight} intensity={rocketsURL[id].intensity} scale={rocketsURL[id].scale} positionY={rocketsURL[id].positionY} />
+            {load ? <Suspense fallback={<Loading/>}><Rocket3D url={url} pointlight={rocketsURL[id].pointLight} ambientlight={rocketsURL[id].ambientLight} intensity={rocketsURL[id].intensity} scale={rocketsURL[id].scale} positionY={rocketsURL[id].positionY} /></Suspense> : <Loading/>}
             <Controls name={rocketsURL[id].name}/>
             <Hint/>
             <Back/>

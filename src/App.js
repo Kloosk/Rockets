@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{Suspense,lazy} from 'react';
 import styled from "styled-components";
 import Header from "./components/header/Header";
 import Main from "./components/main/Main";
@@ -9,9 +9,11 @@ import {
     Switch,
     Route,
 } from "react-router-dom";
-import Mars from "./components/mars/Mars";
+import Loading from "./components/loading/Loading";
 import Model3D from "./components/model3D/Model3D";
-import ViewMars from "./components/viewmars/ViewMars";
+const Mars = lazy(() => import('./components/mars/Mars'));
+const ViewMars = lazy(() => import('./components/viewmars/ViewMars'));
+
 
 
 const Container = styled.div`
@@ -24,19 +26,21 @@ const App = () => {
       <Router>
           <Provider store={store}>
             <Container>
-                <Switch>
-                    <Route exact path="/">
-                        <Header/>
-                        <Main/>
-                        <Model3D/>
-                    </Route>
-                    <Route path="/mars">
-                        <Mars/>
-                    </Route>
-                    <Route path="/view">
-                        <ViewMars/>
-                    </Route>
-                </Switch>
+                    <Switch>
+                        <Route exact path="/">
+                            <Header/>
+                            <Main/>
+                            <Model3D/>
+                        </Route>
+                        <Route path="/mars">
+                            <Suspense fallback={<Loading/>}><Mars/></Suspense>
+                        </Route>
+                        <Route path="/view">
+                            <Suspense fallback={<Loading/>}><ViewMars/></Suspense>
+                        </Route>
+
+                    </Switch>
+
             </Container>
           </Provider>
       </Router>

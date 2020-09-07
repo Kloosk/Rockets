@@ -62,8 +62,8 @@ const Elements = () => {
     };
     return (
         <Ul>
-            <Li onClick={handleClickRoc} ><Href to="/" style={current ? styles : null}>ROCKETS</Href></Li>
-            <Li onClick={handleClickMars} ><Href to="/mars" style={currentMars ? styles : null}>MARS</Href></Li>
+            <Li><Href onClick={handleClickRoc} to="/" style={current ? styles : null}>ROCKETS</Href></Li>
+            <Li><Href onClick={handleClickMars} to="/mars" style={currentMars ? styles : null}>MARS</Href></Li>
         </Ul>
     );
 };

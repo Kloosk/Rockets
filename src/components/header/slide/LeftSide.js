@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components'
 import {useDispatch} from "react-redux";
-import {moveDown, moveToDsc} from "../../../redux";
+import {loadOff, loadOn, moveDown, moveToDsc} from "../../../redux";
 
 const Container = styled.div`
     width: 50%;
@@ -22,14 +22,66 @@ const Dsc = styled.p`
  margin-bottom: 20px;
 `;
 const Btn = styled.button`
-   border: 1px solid #D9D9D9;
+   overflow: hidden;
+   z-index: 2;
+   position: relative;
+   border: 1px solid #eeeeee;
    background: none;
-   padding: 7px 13px;
+   width: 100px;
+   height: 30px;
    cursor: pointer;
-   color: #D9D9D9;
-   &:nth-child(even){
-    margin-top: 10px;
+   color: #eeeeee;
+   transition: color 1s 1s ease;
+   &::before{
+    content: '';
+    z-index: 3;
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 100%;
+    transform: translateX(-102%);
+    height: 3px;
+    background-color: #777777;
+    transition: transform 1s ease;
    }
+   &::after{
+    content: '';
+    z-index: 3;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #777777;
+    transform: translateX(-102%);
+    transition: transform 1s ease;
+   }
+   &:hover::after,&:hover::before{
+    transform: translateX(0);
+   }
+   &:hover{
+     color: #333333;
+   }
+`;
+const Background = styled.div`
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  top: 1px;
+  width: 98px;
+  height: 25px;
+  background-color: #eeeeee;
+  transform: translateX(100%);
+  transition: transform 1s 1s ease;
+  ${Btn}:hover &{
+    transform: translateX(0);
+   }
+`;
+const Flex = styled.div`
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
 `;
 const LeftSide = props => {
     const dispatch = useDispatch();
@@ -38,13 +90,25 @@ const LeftSide = props => {
     };
     const click3D = () => {
         dispatch(moveDown());
+        setTimeout(() => {
+            dispatch(loadOn());
+        },2000);
     };
     return (
         <Container>
             <Title>{props.title}</Title>
             <Dsc>{props.dsc}</Dsc>
-            <Btn onClick={clickView}>View More</Btn>
-            <Btn onClick={click3D}>3D</Btn>
+            <Flex>
+                <Btn onClick={clickView}>
+                    More
+                    <Background></Background>
+                </Btn>
+                <Btn onClick={click3D}>
+                    3D Model
+                    <Background></Background>
+                </Btn>
+            </Flex>
+
         </Container>
     );
 };
