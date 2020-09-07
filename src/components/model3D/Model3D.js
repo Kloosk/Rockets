@@ -1,11 +1,10 @@
-import React, {useEffect, useState,Suspense} from 'react';
+import React, {useEffect, useState} from 'react';
 import styled from 'styled-components'
 import {useSelector} from "react-redux";
 import Controls from "./controls/Controls";
 import Hint from "./hint/Hint";
 import Back from "./back/Back";
-import Loading from "../loading/Loading";
-const Rocket3D = React.lazy(() => import('./rocket3d/Rocket3D'));
+import Rocket3D from "./rocket3d/Rocket3D";
 
 const rocketsURL = [
     {
@@ -57,7 +56,7 @@ const Model3D = () => {
     },[id]);
     return (
         <Container move3d={move3d}>
-            {load ? <Suspense fallback={<Loading/>}><Rocket3D url={url} pointlight={rocketsURL[id].pointLight} ambientlight={rocketsURL[id].ambientLight} intensity={rocketsURL[id].intensity} scale={rocketsURL[id].scale} positionY={rocketsURL[id].positionY} /></Suspense> : <Loading/>}
+            {load && <Rocket3D url={url} pointlight={rocketsURL[id].pointLight} ambientlight={rocketsURL[id].ambientLight} intensity={rocketsURL[id].intensity} scale={rocketsURL[id].scale} positionY={rocketsURL[id].positionY} />}
             <Controls name={rocketsURL[id].name}/>
             <Hint/>
             <Back/>

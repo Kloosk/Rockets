@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components'
 import {useDispatch} from "react-redux";
-import {loadOff, loadOn, moveDown, moveToDsc} from "../../../redux";
+import {loadOn, moveDown, moveToDsc} from "../../../redux";
 
 const Container = styled.div`
     width: 50%;

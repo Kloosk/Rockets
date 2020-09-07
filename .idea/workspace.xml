@@ -3,66 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="9bf67087-242a-4970-9134-b1b8abe87a9b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/asset-manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/precache-manifest.43e67085092aeb3dd7ec6c2c6c7e82d9.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/rockets/falcon1/scene.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/rockets/falcon1/scene.gltf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/rockets/falcon1/textures/LOGO_diffuse.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/rockets/falcon9/scene.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/rockets/falcon9/scene.gltf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/rockets/falcon9/textures/grid_fins_baseColor.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/rockets/falcon9/textures/grid_fins_metallicRoughness.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/rockets/falcon9/textures/grid_fins_normal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/rockets/falcon9/textures/stage_one_skin_baseColor.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/rockets/falcon9/textures/stage_one_skin_metallicRoughness.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/rockets/falcon9/textures/stage_one_skin_normal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/rockets/falconHeavy/scene.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/rockets/falconHeavy/scene.gltf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/rockets/falconHeavy/textures/Material.003_baseColor.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/rockets/falconHeavy/textures/Material.004_baseColor.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/rockets/falconHeavy/textures/Material.005_baseColor.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/rockets/starship/scene.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/rockets/starship/scene.gltf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/rockets/starship/textures/Starship_baseColor.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/rockets/starship/textures/Starship_emissive.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/rockets/starship/textures/Starship_metallicRoughness.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/rockets/starship/textures/Starship_normal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/service-worker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/static/js/0.78d374d2.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/static/js/0.78d374d2.chunk.js.LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/static/js/0.78d374d2.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/static/js/1.f6df9890.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/static/js/1.f6df9890.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/static/js/4.c9a74711.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/static/js/4.c9a74711.chunk.js.LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/static/js/4.c9a74711.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/static/js/5.9fd362a8.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/static/js/5.9fd362a8.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/static/js/6.6283bbd4.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/static/js/6.6283bbd4.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/static/js/7.d72fcc7e.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/static/js/7.d72fcc7e.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/static/js/main.2fe81574.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/static/js/main.2fe81574.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/static/js/runtime-main.0a23e864.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/static/js/runtime-main.0a23e864.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/static/media/earth_map.eec7a2f8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/static/media/mars.b30dc37a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/static/media/preview.b4d13397.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/texturesMars/arid_bk.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/texturesMars/arid_dn.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/texturesMars/arid_ft.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/texturesMars/arid_lf.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/texturesMars/arid_rt.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/texturesMars/arid_up.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/slide/LeftSide.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/slide/LeftSide.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/loading/Loading.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/loading/Loading.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/model3D/Model3D.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/model3D/Model3D.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/model3D/rocket3d/Rocket3D.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/model3D/rocket3d/Rocket3D.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,7 +135,7 @@
       <workItem from="1599405937185" duration="3254000" />
       <workItem from="1599415389979" duration="207000" />
       <workItem from="1599421315001" duration="2522000" />
-      <workItem from="1599462912240" duration="9437000" />
+      <workItem from="1599462912240" duration="12725000" />
     </task>
     <servers />
   </component>
