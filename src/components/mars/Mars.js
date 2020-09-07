@@ -34,7 +34,6 @@ const Missionmars = styled.div`
   justify-content: center;
 `;
 const CanvasStyled = styled(Canvas)`
-
 `;
 const Mars = () => {
     function Sphere(props) {
@@ -70,10 +69,10 @@ const Mars = () => {
         useFrame(() =>(model && rotate()));
         useFrame(() =>(model && move()));
         useEffect(() => {
-            new GLTFLoader().load('/rockets/falcon9/scene.gltf',setModel);
+            new GLTFLoader().load('./rockets/falcon9/scene.gltf',setModel);
         },[]);
         return (
-            model ? <primitive ref={mesh} position={[-2, 0.5, 0]} scale={[0.04,0.04,0.04]} object={model.scene}></primitive> : null
+            model ? <primitive ref={mesh} position={[-2, -0.5, 0]} scale={[0.04,0.04,0.04]} object={model.scene}></primitive> : null
         )
     };
     return (
@@ -83,11 +82,11 @@ const Mars = () => {
                 <Description/>
                 <Missionmars>
                     <Title/>
-                    <CanvasStyled camera={{ fov: 35, position: [0, 0, 11]}}>
+                    <CanvasStyled camera={{ fov: 26, position: [0, 0, 11]}}>
                         <pointLight position={[0, 0, 10]}/>
                         <RocketModel/>
-                        <Sphere position={[-2, 0, 0]} url={earth_map} rot={0.002}/>
-                        <Sphere position={[2,0,1]} url={mars_map} rot={0.002}/>
+                        <Sphere position={[-2, -1, 0]} url={earth_map} rot={0.002}/>
+                        <Sphere position={[2,-1,1]} url={mars_map} rot={0.002}/>
                     </CanvasStyled>
                     <Btn/>
                 </Missionmars>

@@ -1,7 +1,7 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import styled from 'styled-components'
 import {useDispatch, useSelector} from "react-redux";
-import {changePhotoNum} from "../../../redux";
+import {changePhotoNum, loadPhotoOff, loadPhotoOn} from "../../../redux";
 
 const Container = styled.div`
   width: 80px;
@@ -19,10 +19,18 @@ const Photo = (props) => {
     },[]);
     const dispatch = useDispatch();
     const numOfPhoto = useSelector(state => state.photos.numOfPhoto);
+    const changePhoto = useSelector(state => state.loadingPhoto.loadingPhoto);
     const handlePhoto = () => {
-        document.getElementById(numOfPhoto).style.border="none";
-        dispatch(changePhotoNum(id));
-        document.getElementById(id).style.border="2px solid #fff";
+        if(!changePhoto){
+            dispatch(loadPhotoOn());
+            document.getElementById(numOfPhoto).style.border="none";
+            dispatch(changePhotoNum(id));
+            document.getElementById(id).style.border="2px solid #fff";
+            setTimeout(() => {
+                dispatch(loadPhotoOff());
+            },1000);
+        }
+
     };
     return (
         <Container id={`${id}`} onClick={handlePhoto} bg={props.img}></Container>

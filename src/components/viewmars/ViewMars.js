@@ -26,7 +26,6 @@ const CameraControls = () => {
             ref={controls}
             args={[camera, domElement]}
             enableZoom={false}
-            autoRotate
         />
     );
 };

@@ -17,7 +17,7 @@ const Flex = styled.div`
 `;
 const Txt = styled.h1`
   width: 50%;
-  font-size: 1rem;
+  font-size: 2rem;
   color: #fff;
   margin-right: 5px;
   letter-spacing: 1px;
@@ -28,7 +28,7 @@ const Btn = styled.button`
   cursor: pointer;
   border: 1px solid #fff;
   width: 20%;
-  height: 20%;
+  height: 100%;
   background-color: transparent;
   color: #fff;
   margin: 0 2px;

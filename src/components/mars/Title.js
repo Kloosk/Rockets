@@ -8,10 +8,9 @@ const Container = styled.div`
   justify-content: center;  
 `;
 const H1 = styled.h1`
-  letter-spacing: 7px;
-  font-size: 3rem;
+  letter-spacing: 20px;
+  font-size: 5rem;
   color: #fff;
-  margin-bottom: 5px;
 `;
 const Title = () => {
     return (

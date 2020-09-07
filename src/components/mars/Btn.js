@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 
 const ViewBtn = styled.button`
     color: #fff;
-    font-size: 2rem;
+    font-size: 2.5rem;
     padding: 7px 14px;
     background-color: transparent;
     border: 1px solid #fff;

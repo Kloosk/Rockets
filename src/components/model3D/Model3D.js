@@ -19,7 +19,7 @@ const rocketsURL = [
         name: 'falcon9',
         pointLight: false,
         ambientLight: true,
-        intensity: 1.5,
+        intensity: 1,
         scale: 1.5,
         positionY: -50
     },

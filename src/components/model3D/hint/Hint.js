@@ -25,7 +25,7 @@ const Icon = styled.svg`
 `;
 const Title = styled.h1`
  width: 10vw;
- font-size: 0.5rem;
+ font-size: 1.2rem;
  color: #fff;
  text-align: center;
  padding-bottom: 2px;
@@ -37,7 +37,7 @@ const Dsc = styled.p`
  max-height: 80%;
  width: 40vw;
  color: #fff;
- font-size: 0.6rem;
+ font-size: 1rem;
  opacity: 0;
  transition: opacity 0.1s ease;
  ${Container}:hover &{

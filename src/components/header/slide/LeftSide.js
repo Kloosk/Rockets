@@ -10,16 +10,18 @@ const Container = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding-left: 5px;
+    padding-left: 20px;
 `;
 const Title = styled.h1`
  color: #D9D9D9;
  margin-bottom: 10px;
+ font-size: 3rem
 `;
 const Dsc = styled.p`
  color: #D9D9D9;
  text-align: center;
  margin-bottom: 20px;
+ font-size: 2rem;
 `;
 const Btn = styled.button`
    overflow: hidden;
@@ -27,20 +29,21 @@ const Btn = styled.button`
    position: relative;
    border: 1px solid #eeeeee;
    background: none;
-   width: 100px;
-   height: 30px;
+   width: 180px;
+   height: 65px;
    cursor: pointer;
    color: #eeeeee;
    transition: color 1s 1s ease;
+   font-size: 2rem;
    &::before{
     content: '';
     z-index: 3;
     position: absolute;
-    top: -2px;
+    top: -4px;
     left: 0;
     width: 100%;
     transform: translateX(-102%);
-    height: 3px;
+    height: 8px;
     background-color: #777777;
     transition: transform 1s ease;
    }
@@ -48,10 +51,10 @@ const Btn = styled.button`
     content: '';
     z-index: 3;
     position: absolute;
-    bottom: -2px;
+    bottom: -4px;
     left: 0;
     width: 100%;
-    height: 3px;
+    height: 8px;
     background-color: #777777;
     transform: translateX(-102%);
     transition: transform 1s ease;
@@ -68,8 +71,8 @@ const Background = styled.div`
   position: absolute;
   left: 0;
   top: 1px;
-  width: 98px;
-  height: 25px;
+   width: 178px;
+   height: 63px;
   background-color: #eeeeee;
   transform: translateX(100%);
   transition: transform 1s 1s ease;

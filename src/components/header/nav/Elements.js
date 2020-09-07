@@ -43,6 +43,7 @@ const Href = styled(Link)`
   color: #D9D9D9;
   padding: 0 5px;
   transition: all 0.2s ease-in;
+  font-size: 1.5rem;
 `;
 const Elements = () => {
     const [current,setCurrent] = useState(true);

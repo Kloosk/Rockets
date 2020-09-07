@@ -7,7 +7,7 @@ const Container = styled.button`
   position: absolute;
   top: 2vh;
   right: 2vw;  
-  font-size: 1rem;
+  font-size: 2rem;
   padding: 7px 17px;
   color: #ACAAA9;
   background: transparent;
