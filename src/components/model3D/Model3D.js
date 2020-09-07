@@ -48,12 +48,12 @@ const Container = styled.div`
   background-color: #0D0D0D;
 `;
 const Model3D = () => {
-    const [url,setUrl] = useState(`/rockets/${rocketsURL[0].name}/scene.gltf`);
+    const [url,setUrl] = useState(`./rockets/${rocketsURL[0].name}/scene.gltf`);
     const move3d = useSelector(state => state.move3d.move);
     const id = useSelector(state => state.slide.numOfSlide);
     const load = useSelector(state => state.load.loading);
     useEffect(() => {
-        setUrl(`/rockets/${rocketsURL[id].name}/scene.gltf`);
+        setUrl(`./rockets/${rocketsURL[id].name}/scene.gltf`);
     },[id]);
     return (
         <Container move3d={move3d}>
