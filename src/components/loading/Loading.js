@@ -17,13 +17,24 @@ const Img = styled.img`
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  width: 20%;
-  height: 30%;
+  width: 30%;
+  height: 35%;
+`;
+const Txt = styled.h1`
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #fff;
 `;
 const Loading = ({loading}) => {
     return (
         <Container loading={loading}>
             <Img src={preview} alt="Loading"/>
+            <Txt>It may take a few seconds.</Txt>
         </Container>
     );
 };

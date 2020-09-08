@@ -28,7 +28,7 @@ const Photo = (props) => {
             document.getElementById(id).style.border="2px solid #fff";
             setTimeout(() => {
                 dispatch(loadPhotoOff());
-            },1000);
+            },500);
         }
 
     };

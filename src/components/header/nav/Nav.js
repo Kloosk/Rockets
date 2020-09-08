@@ -30,10 +30,10 @@ const Container = styled.nav`
   }
 `;
 
-const Nav = () => {
+const Nav = ({curr}) => {
     return (
         <Container>
-            <Elements/>
+            <Elements curr={curr}/>
         </Container>
     );
 };

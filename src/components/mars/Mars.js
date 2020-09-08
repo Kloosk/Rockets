@@ -36,6 +36,7 @@ const Missionmars = styled.div`
 const CanvasStyled = styled(Canvas)`
 `;
 const Mars = () => {
+    document.title = "SpaceX Mars";
     function Sphere(props) {
         const texture = useMemo(() => new THREE.TextureLoader().load(props.url), [props.url]);
         const mesh = useRef();
@@ -72,21 +73,21 @@ const Mars = () => {
             new GLTFLoader().load('./rockets/falcon9/scene.gltf',setModel);
         },[]);
         return (
-            model ? <primitive ref={mesh} position={[-2, -0.5, 0]} scale={[0.04,0.04,0.04]} object={model.scene}></primitive> : null
+            model ? <primitive ref={mesh} position={[-2, -0.5, 2]} scale={[0.03,0.03,0.03]} object={model.scene}></primitive> : null
         )
     };
     return (
         <Container>
-            <Nav/>
+            <Nav curr={false}/>
             <Flex>
                 <Description/>
                 <Missionmars>
                     <Title/>
                     <CanvasStyled camera={{ fov: 26, position: [0, 0, 11]}}>
                         <pointLight position={[0, 0, 10]}/>
-                        <RocketModel/>
                         <Sphere position={[-2, -1, 0]} url={earth_map} rot={0.002}/>
                         <Sphere position={[2,-1,1]} url={mars_map} rot={0.002}/>
+                        <RocketModel/>
                     </CanvasStyled>
                     <Btn/>
                 </Missionmars>

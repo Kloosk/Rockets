@@ -13,7 +13,7 @@ const lightSetReducer = (state=initialState,action) =>{
       }
       }
       case LIGHT_SUB:{
-          if(state.value > 0){
+          if(state.value > 0.5){
               return{
                   ...state,
                   value: state.value-0.5

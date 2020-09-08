@@ -15,7 +15,7 @@ const Container = styled.div`
 const Img = styled.div`
     width: 80%;
     height: 60%;
-    transition: background 1s ease;
+    transition: background 0.5s ease;
     background: ${props => `url(${props.bg}) no-repeat center/cover`};
     position: relative;
 `;
@@ -57,7 +57,7 @@ const RightSide = props => {
             dispatch(changePhotoNext(0,props.imgs.length));
             setTimeout(() => {
                 dispatch(loadPhotoOff());
-            },1000);
+            },500);
             if(numOfPhoto === (props.imgs.length-1)){
                 document.getElementById(props.imgs.length-1).style.border="none";
                 dispatch(changePhotoNum(0));
@@ -77,7 +77,7 @@ const RightSide = props => {
             dispatch(changePhotoPrev(0,props.imgs.length));
             setTimeout(() => {
                 dispatch(loadPhotoOff());
-            },1000);
+            },500);
 
             if(numOfPhoto === 0){
                 document.getElementById(numOfPhoto).style.border="none";

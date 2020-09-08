@@ -27,7 +27,7 @@ const rocketsURL = [
         name: 'falconHeavy',
         pointLight: true,
         ambientLight: false,
-        intensity: 1,
+        intensity: 0.5,
         scale: 6,
         positionY: -15
     },
@@ -42,7 +42,7 @@ const rocketsURL = [
 const Container = styled.div`
   width: 100vw;
   height: 100vh;
-  transition: transform 2s ease;
+  transition: transform 1.9s ease;
   transform: ${props => props.move3d ? `translateY(-200vh)` : `translateY(-100vh)`};
   background-color: #0D0D0D;
 `;

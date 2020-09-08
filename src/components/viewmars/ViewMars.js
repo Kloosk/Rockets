@@ -31,6 +31,7 @@ const CameraControls = () => {
 };
 
 function SkyBox() {
+    document.title = "SpaceX View Mars";
     const { scene } = useThree();
     const loader = new CubeTextureLoader();
     const texture = loader.load([

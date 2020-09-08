@@ -45,26 +45,16 @@ const Href = styled(Link)`
   transition: all 0.2s ease-in;
   font-size: 1.5rem;
 `;
-const Elements = () => {
-    const [current,setCurrent] = useState(true);
-    const [currentMars,setCurrentMars] = useState(false);
-    const handleClickRoc = () => {
-        setCurrentMars(false);
-        setCurrent(true);
-
-    };
-    const handleClickMars = () => {
-        setCurrent(false);
-        setCurrentMars(true);
-    };
+const Elements = ({curr}) => {
+    const [current,setCurrent] = useState(curr);
     const styles = {
         borderRight: '1px solid #D9D9D9',
         borderLeft: '1px solid #D9D9D9'
     };
     return (
         <Ul>
-            <Li><Href onClick={handleClickRoc} to="/" style={current ? styles : null}>ROCKETS</Href></Li>
-            <Li><Href onClick={handleClickMars} to="/mars" style={currentMars ? styles : null}>MARS</Href></Li>
+            <Li><Href to="/" style={current ? styles : null}>ROCKETS</Href></Li>
+            <Li><Href to="/mars" style={current ? null : styles}>MARS</Href></Li>
         </Ul>
     );
 };

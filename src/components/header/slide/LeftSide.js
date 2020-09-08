@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components'
-import {useDispatch} from "react-redux";
-import {loadOn, moveDown, moveToDsc} from "../../../redux";
+import {useDispatch, useSelector} from "react-redux";
+import {blockBtn, loadOn, moveDown, moveToDsc, unblockBtn} from "../../../redux";
 
 const Container = styled.div`
     width: 50%;
@@ -88,14 +88,28 @@ const Flex = styled.div`
 `;
 const LeftSide = props => {
     const dispatch = useDispatch();
+    const block = useSelector(state => state.block.block);
     const clickView = () => {
-        dispatch(moveToDsc());
+        if(!block){
+            dispatch(moveToDsc());
+            dispatch(blockBtn());
+            setTimeout(() => {
+                dispatch(unblockBtn());
+            },2000);
+        }
+
     };
     const click3D = () => {
-        dispatch(moveDown());
-        setTimeout(() => {
-            dispatch(loadOn());
-        },2000);
+        if(!block){
+            dispatch(blockBtn());
+            dispatch(moveDown());
+            setTimeout(() => {
+                dispatch(loadOn());
+            },2000);
+            setTimeout(() => {
+                dispatch(unblockBtn());
+            },2000);
+        }
     };
     return (
         <Container>

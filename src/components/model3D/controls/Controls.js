@@ -13,25 +13,30 @@ const Container = styled.div`
 const Flex = styled.div`
   display: flex;
   width: 100%;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
+  align-items: center;
 `;
 const Txt = styled.h1`
-  width: 50%;
+  text-align: right;
+  width: 40%;
   font-size: 2rem;
   color: #fff;
-  margin-right: 5px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  
+  margin-right: 5px;
 `;
 const Btn = styled.button`
   cursor: pointer;
   border: 1px solid #fff;
-  width: 20%;
-  height: 100%;
+  width: 100px;
+  height: 50px;
   background-color: transparent;
+  font-size: 2rem;
   color: #fff;
-  margin: 0 2px;
+  margin: 0 7px;
+  &:hover{
+    transform: scale(1.1);
+  }
 `;
 
 const Controls = ({name}) => {

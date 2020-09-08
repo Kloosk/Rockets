@@ -8,6 +8,7 @@ import lightSetReducer from "./light/lightReducer";
 import scaleSetReducer from "./scale/scaleReducer";
 import loadReducer from "./loading/loadingReducer";
 import loadPhotoReducer from "./loadPhoto/loadPhotosReducer";
+import blockBtnReducer from "./blockBtn/blockBtnReducer";
 
 const rootReducer = combineReducers({
    slide: changeSlideReducer,
@@ -18,7 +19,8 @@ const rootReducer = combineReducers({
    light: lightSetReducer,
    scale: scaleSetReducer,
    load: loadReducer,
-   loadingPhoto: loadPhotoReducer
+   loadingPhoto: loadPhotoReducer,
+   block: blockBtnReducer
 });
 
 export default rootReducer
