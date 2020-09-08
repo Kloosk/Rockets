@@ -3,23 +3,25 @@
   <component name="ChangeListManager">
     <list default="true" id="9bf67087-242a-4970-9134-b1b8abe87a9b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/Header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/header/nav/Elements.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/nav/Elements.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/nav/Nav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/nav/Nav.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/header/slide/LeftSide.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/slide/LeftSide.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/header/slide/Photo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/slide/Photo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/header/slide/RightSide.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/slide/RightSide.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/mars/Btn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mars/Btn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/mars/Description.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mars/Description.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/loading/Loading.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/loading/Loading.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/loading/preview.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/loading/preview.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/main/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/Main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/main/back/Back.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/back/Back.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/main/rocket/Rocket.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/rocket/Rocket.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/mars/Mars.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mars/Mars.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/mars/Title.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mars/Title.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/model3D/Model3D.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/model3D/Model3D.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/model3D/back/Back.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/model3D/back/Back.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/model3D/controls/Controls.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/model3D/controls/Controls.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/model3D/hint/Hint.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/model3D/hint/Hint.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/viewmars/ViewMars.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/viewmars/ViewMars.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/photo/photoActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/photo/photoActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/photo/photoReducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/photo/photoReducers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/photo/photoTypes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/photo/photoTypes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/light/lightReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/light/lightReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/rootReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/rootReducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,16 +62,16 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.3.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Łukasz\Desktop\space\src\components\loading" />
-      <recent name="C:\Users\Łukasz\Desktop\space\public" />
-      <recent name="C:\Users\Łukasz\Desktop\space\src\components" />
-      <recent name="C:\Users\Łukasz\Desktop\space\src\viewmars\img" />
-      <recent name="C:\Users\Łukasz\Desktop\space\src" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Łukasz\Desktop\space\public" />
       <recent name="C:\Users\Łukasz\Desktop\space\src\components\mars\model\rocket" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Łukasz\Desktop\space\public" />
+      <recent name="C:\Users\Łukasz\Desktop\space\src\components\loading" />
+      <recent name="C:\Users\Łukasz\Desktop\space\src\components" />
+      <recent name="C:\Users\Łukasz\Desktop\space\src\viewmars\img" />
+      <recent name="C:\Users\Łukasz\Desktop\space\src" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -149,7 +151,12 @@
       <workItem from="1599405937185" duration="3254000" />
       <workItem from="1599415389979" duration="207000" />
       <workItem from="1599421315001" duration="2522000" />
-      <workItem from="1599462912240" duration="23004000" />
+      <workItem from="1599462912240" duration="23250000" />
+      <workItem from="1599510428661" duration="2800000" />
+      <workItem from="1599513273980" duration="189000" />
+      <workItem from="1599546859617" duration="4893000" />
+      <workItem from="1599563432211" duration="5728000" />
+      <workItem from="1599569524809" duration="259000" />
     </task>
     <servers />
   </component>
@@ -166,6 +173,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="873" y="45" width="998" height="952" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1597844973543" />
+    <state x="2154" y="-13" width="1612" height="757" maximized="true" key="dock-window-1" timestamp="1599549066235">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2154" y="-13" width="1612" height="757" maximized="true" key="dock-window-1/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599549066235" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1598257917462">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
