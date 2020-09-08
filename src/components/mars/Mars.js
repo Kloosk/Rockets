@@ -13,12 +13,20 @@ const Container = styled.div`
   width: 100vw;
   height: 100vh;
   background-color: #0D0D0D;
+   @media (max-width: 768px) {
+    height: 200vh;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
 `;
 const Flex = styled.div`
   display: flex;
   height: 90%;
   width: 100%;
   padding: 15px;
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+  }
 `;
 const Missionmars = styled.div`
   margin-top: 10vh;
@@ -32,11 +40,26 @@ const Missionmars = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+   @media (max-width: 768px) {
+    margin: 0;
+    position: absolute;
+    height: 80vh;
+    top: 10vh;
+    left: 0;
+    width: 100%;
+  }
 `;
 const CanvasStyled = styled(Canvas)`
+    
 `;
 const Mars = () => {
     document.title = "SpaceX Mars";
+    const [mobile,setMobile] = useState(26);
+    useEffect(() => {
+        if(window.innerWidth < 768){
+            setMobile(38);
+        }
+    },[]);
     function Sphere(props) {
         const texture = useMemo(() => new THREE.TextureLoader().load(props.url), [props.url]);
         const mesh = useRef();
@@ -83,7 +106,7 @@ const Mars = () => {
                 <Description/>
                 <Missionmars>
                     <Title/>
-                    <CanvasStyled camera={{ fov: 26, position: [0, 0, 11]}}>
+                    <CanvasStyled camera={{ fov: mobile, position: [0, 0, 11]}}>
                         <pointLight position={[0, 0, 10]}/>
                         <Sphere position={[-2, -1, 0]} url={earth_map} rot={0.002}/>
                         <Sphere position={[2,-1,1]} url={mars_map} rot={0.002}/>

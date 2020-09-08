@@ -11,17 +11,28 @@ const Container = styled.div`
     justify-content: center;
     flex-direction: column;
     padding-left: 20px;
+    @media (max-width: 768px) {
+      width: 90%;
+      height: 50%;
+      padding-left: 30px;
+  }
 `;
 const Title = styled.h1`
  color: #D9D9D9;
  margin-bottom: 10px;
- font-size: 3rem
+ font-size: 3rem;
+  @media (max-width: 768px) {
+    font-size: 1.2rem;
+  }
 `;
 const Dsc = styled.p`
  color: #D9D9D9;
  text-align: center;
  margin-bottom: 20px;
  font-size: 2rem;
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
 `;
 const Btn = styled.button`
    overflow: hidden;
@@ -65,6 +76,11 @@ const Btn = styled.button`
    &:hover{
      color: #333333;
    }
+    @media (max-width: 768px) {
+    font-size: 1rem;
+    width: 45%;
+    
+  }
 `;
 const Background = styled.div`
   z-index: -1;

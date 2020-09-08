@@ -18,6 +18,9 @@ const Title = styled.h1`
   grid-column: 1/2;
   border-bottom: 2px solid #ACAAA9;
   width: 80%;
+   @media (max-width: 768px) {
+    display: none;
+  }
 `;
 const Info = styled.div`
   font-size: 2rem;
@@ -26,6 +29,10 @@ const Info = styled.div`
   display: flex;
   align-items: center;
   padding: 5px;
+   @media (max-width: 768px) {
+    font-size: 1rem;
+    align-items: start;
+  }
  
 `;
 const Wiki  = styled.a`
@@ -39,9 +46,15 @@ const Wiki  = styled.a`
 `;
 const Infot = styled.p`
     width: 20%;
+     @media (max-width: 768px) {
+        width: 35%;
+  }
 `;
 const Infocont = styled.div`
     grid-column: 2/4;
+     @media (max-width: 768px) {
+    grid-column: 1/4;
+  }
 `;
 const Rocket = (props) => {
     const addDot = (cost) => {

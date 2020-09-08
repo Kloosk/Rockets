@@ -11,6 +11,10 @@ const H1 = styled.h1`
   letter-spacing: 20px;
   font-size: 5rem;
   color: #fff;
+   @media (max-width: 768px) {
+    font-size: 2rem;
+    letter-spacing: 3px;
+  }
 `;
 const Title = () => {
     return (

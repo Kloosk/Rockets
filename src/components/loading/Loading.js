@@ -19,6 +19,10 @@ const Img = styled.img`
   transform: translate(-50%,-50%);
   width: 30%;
   height: 35%;
+   @media (max-width: 768px) {
+    width: 90%;
+    height: 35%;
+  }
 `;
 const Txt = styled.h1`
     position: absolute;

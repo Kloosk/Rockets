@@ -14,7 +14,9 @@ const Container = styled.div`
   transition: all 0.5s ease-in-out;
   transform: ${props => props.animOn ? `translate(${props.wayToMove})` : `translate(0)`};
   opacity: ${props => props.animOn ? '0' : '1'};
-  
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+  }
 `;
 const Slide = () => {
     const URL = `https://api.spacexdata.com/v3/rockets`;

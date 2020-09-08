@@ -39,6 +39,12 @@ const Container = styled.article`
 ::-webkit-scrollbar-corner {
   background: transparent;
 }
+ @media (max-width: 768px) {
+    margin-top: 100vh;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+  }
 `;
 const H1 = styled.h1`
   font-size: 2rem;
@@ -47,10 +53,16 @@ const H1 = styled.h1`
   :first-child{
     margin-top: 0;
   }
+  @media (max-width: 768px) {
+    font-size: 1.1rem;
+  }
 `;
 const P = styled.p`
   font-size: 1.5rem;
   color: #fff;
+   @media (max-width: 768px) {
+    font-size: 1rem;
+  }
 `;
 const Description = () => {
     return (

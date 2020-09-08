@@ -12,6 +12,9 @@ const Container = styled.div`
   cursor: pointer;
   transition: transform 0.8s ease-out;
   transform: ${props => props.hide && `translateY(100%)`};
+   @media (max-width: 768px) {
+    display: none;
+  }
 `;
 const Flex = styled.div`
   display: flex;
@@ -37,7 +40,7 @@ const Dsc = styled.p`
  max-height: 80%;
  width: 40vw;
  color: #fff;
- font-size: 1rem;
+ font-size: 1.5rem;
  opacity: 0;
  transition: opacity 0.1s ease;
  ${Container}:hover &{

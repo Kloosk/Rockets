@@ -9,12 +9,16 @@ const ViewBtn = styled.button`
     background-color: transparent;
     border: 1px solid #fff;
     cursor: pointer;
+   @media (max-width: 768px) {
+    font-size: 1.5rem;
+  }
 `;
 const Href = styled(Link)`
   text-decoration: none;
   color: #D9D9D9;
   padding: 0 5px;
   transition: all 0.2s ease-in;
+  
 `;
 const Btn = () => {
     return (

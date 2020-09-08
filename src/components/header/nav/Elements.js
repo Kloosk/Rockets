@@ -3,7 +3,7 @@ import styled from "styled-components";
 import {Link} from "react-router-dom";
 
 const Ul = styled.ul`
-  width: 50%;
+  width: 70%;
   list-style: none;
   font-size: 0.8rem;
   display: flex;

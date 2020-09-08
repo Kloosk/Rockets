@@ -28,6 +28,9 @@ const Container = styled.nav`
   &:hover::after{
     opacity: 1;
   }
+   @media (max-width: 768px) {
+    justify-content: space-around;
+  }
 `;
 
 const Nav = ({curr}) => {

@@ -11,6 +11,10 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+   @media (max-width: 768px) {
+    width: 100%;
+    height: 50%;
+  }
 `;
 const Img = styled.div`
     width: 80%;
@@ -24,6 +28,9 @@ const Gallery = styled.div`
   align-items: center;
   justify-content: center;
   width: 90%;
+   @media (max-width: 768px) {
+    display: none;
+  }
 `;
 const Arrow = styled.button`
   z-index: 5;
@@ -39,6 +46,9 @@ const Arrow = styled.button`
   border: none;
   transition: opacity 0.5s ease;
   ${Img}:hover &{
+    opacity: 1;
+  }
+   @media (max-width: 768px) {
     opacity: 1;
   }
 `;

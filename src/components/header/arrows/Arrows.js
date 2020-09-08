@@ -17,6 +17,10 @@ const LeftArrow = styled.div`
   &:hover{
     opacity: 1;
   }
+   @media (max-width: 768px) {
+    opacity: 1;
+    width: 10vw;
+  }
 `;
 const RightArrow = styled.div`
   z-index: 3;
@@ -32,6 +36,10 @@ const RightArrow = styled.div`
   background-color: #000;
   &:hover{
     opacity: 1;
+  }
+   @media (max-width: 768px) {
+    opacity: 1;
+    width: 10vw;
   }
 `;
 const Svg = styled.svg`
