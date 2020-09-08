@@ -1,13 +1,13 @@
 import React from 'react';
 import styled from 'styled-components'
-import {useDispatch} from "react-redux";
-import {moveToMain} from "../../../redux";
+import {useDispatch, useSelector} from "react-redux";
+import {blockBtn, moveToMain, unblockBtn} from "../../../redux";
 
 const Container = styled.button`
   position: absolute;
   top: 2vh;
   right: 2vw;  
-  font-size: 1rem;
+  font-size: 2rem;
   padding: 7px 17px;
   color: #ACAAA9;
   background: transparent;
@@ -16,6 +16,11 @@ const Container = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.2s ease;
+  &:hover{
+      color: #fff;
+      border-color:#fff;
+  }
 `;
 const Svg = styled.svg`
   margin-right: 7px;
@@ -24,8 +29,15 @@ const Svg = styled.svg`
 `;
 const Back = () => {
     const dispatch = useDispatch();
+    const block = useSelector(state => state.block.block);
     const handleClick = () => {
-      dispatch(moveToMain());
+        if(!block){
+            dispatch(moveToMain());
+            dispatch(blockBtn());
+            setTimeout(() => {
+                dispatch(unblockBtn());
+            },2000);
+        }
     };
     return (
         <Container onClick={handleClick}>

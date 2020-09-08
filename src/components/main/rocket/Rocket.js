@@ -12,7 +12,7 @@ const Container = styled.div`
 `;
 const Title = styled.h1`
   text-align: center;
-  font-size: 4rem;
+  font-size: 6rem;
   color: #ACAAA9;
   transform: rotate(90deg);
   grid-column: 1/2;
@@ -20,7 +20,7 @@ const Title = styled.h1`
   width: 80%;
 `;
 const Info = styled.div`
-  font-size: 1rem;
+  font-size: 2rem;
   color: #ACAAA9;
   text-transform: uppercase;
   display: flex;
@@ -32,7 +32,7 @@ const Wiki  = styled.a`
   color: #ACAAA9;
   text-align: center;
   text-decoration: none;
-  grid-column: 1/4;
+  grid-column: 2/3;
   font-size: 2rem;
   border: 2px solid #ACAAA9;
   padding: 5px;
