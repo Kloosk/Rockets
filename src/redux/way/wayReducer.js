@@ -6,13 +6,14 @@ const initialState = {
 
 const wayToMoveReducer = (state=initialState,action) => {
     switch(action.type){
-        case WAY_TO_MOVE: return{
-            ...state,
-            wayToMove: action.way
-        };
-        default: return {
-            state
+        case WAY_TO_MOVE:{
+            return{
+                ...state,
+                wayToMove: action.way
+            };
         }
+        default: return state
+
     }
 };
 

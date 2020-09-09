@@ -10,7 +10,7 @@ const LeftArrow = styled.div`
   left: 0;
   width: 5vw;
   height: 100vh;
-  opacity: 0.1;
+  opacity: 0.3;
   border-right: 1px solid #D9D9D9;
   cursor: pointer;
   transition: all 1s ease-in;
@@ -22,6 +22,10 @@ const LeftArrow = styled.div`
     width: 10vw;
     border: none;
   }
+    @media only screen and (orientation: landscape) and (max-width: 825px) and (min-width: 560px) {
+    opacity: 1;
+    border: none;
+  }
 `;
 const RightArrow = styled.div`
   z-index: 3;
@@ -30,7 +34,7 @@ const RightArrow = styled.div`
   right: 0;
   width: 5vw;
   height: 100vh;
-  opacity: 0.1;
+  opacity: 0.3;
   border-left: 1px solid #D9D9D9;
   cursor: pointer;
   transition: all 1s ease-in;
@@ -42,6 +46,10 @@ const RightArrow = styled.div`
     width: 10vw;
     border: none;
   }
+  @media only screen and (orientation: landscape) and (max-width: 825px) and (min-width: 560px) {
+    opacity: 1;
+    border: none;
+  }
 `;
 const Svg = styled.svg`
   position: relative;
@@ -51,6 +59,9 @@ const Svg = styled.svg`
   color: #D9D9D9;
   width: 20%;
   @media (orientation:portrait) and  (max-width: 768px) {
+    width: 80%;
+  }
+  @media only screen and (orientation: landscape) and (max-width: 825px) and (min-width: 560px) {
     width: 80%;
   }
 `;
