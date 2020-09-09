@@ -24,7 +24,7 @@ const Img = styled.img`
     height: 35%;
   }
    @media only screen and (orientation: landscape)and (max-width: 812px) {
-      width: 70%;
+      width: 40%;
   }
 `;
 const Txt = styled.h1`
