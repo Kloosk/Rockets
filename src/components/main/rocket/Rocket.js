@@ -18,10 +18,10 @@ const Title = styled.h1`
   grid-column: 1/2;
   border-bottom: 2px solid #ACAAA9;
   width: 80%;
-  @media (max-width: 768px) {
+  @media (orientation:portrait) and (max-width: 768px) {
     display: none;
   }
-  @media only screen and (orientation: landscape) and (max-width: 812px){
+  @media (orientation: landscape) and (max-width: 825px) and (min-width: 560px){
     display: none;
    }
 `;
@@ -32,13 +32,13 @@ const Info = styled.div`
   display: flex;
   align-items: center;
   padding: 5px;
-   @media (max-width: 768px) {
+   @media (orientation:portrait) and (max-width: 768px) {
     font-size: 1rem;
     justify-content: center;
     flex-direction: column;
     margin-bottom: 10px;
   }
-  @media only screen and (orientation: landscape) and (max-width: 812px){
+  @media (orientation: landscape) and (max-width: 825px) and (min-width: 560px){
       font-size: 1rem;
       
    }
@@ -52,11 +52,11 @@ const Wiki  = styled.a`
   font-size: 2rem;
   border: 2px solid #ACAAA9;
   padding: 5px;
-  @media (max-width: 768px) {
+  @media (orientation:portrait) and (max-width: 768px) {
     padding: 5px 8px;
     font-size: 1.1rem;
   }
-  @media only screen and (orientation: landscape)and (max-width: 812px) {
+  @media (orientation: landscape)and (max-width: 825px) and (min-width: 560px) {
     font-size: 1.1rem;
     padding: 5px 8px;
     grid-column: 1/2;
@@ -65,17 +65,17 @@ const Wiki  = styled.a`
 `;
 const Infot = styled.p`
     width: 20%;
-     @media (max-width: 768px) {
+     @media (orientation:portrait) and (max-width: 768px) {
        width: auto;
        margin-bottom: 2px;
   
 `;
 const Infocont = styled.div`
     grid-column: 2/4;
-    @media (max-width: 768px) {
+    @media (orientation:portrait) and (max-width: 768px) {
     grid-column: 1/4;
   }
-   @media only screen and (orientation: landscape) and (max-width: 812px){
+   @media (orientation: landscape) and (max-width: 825px) and (min-width: 560px){
       grid-column: 1/4;
    }
 `;

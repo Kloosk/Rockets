@@ -9,7 +9,7 @@ const ViewBtn = styled.button`
     background-color: transparent;
     border: 1px solid #fff;
     cursor: pointer;
-   @media (max-width: 768px) {
+   @media (orientation:portrait) and  (max-width: 768px) {
     font-size: 1.5rem;
     position: relative;
     z-index: 1;

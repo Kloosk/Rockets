@@ -17,9 +17,10 @@ const LeftArrow = styled.div`
   &:hover{
     opacity: 1;
   }
-   @media (max-width: 768px) {
+   @media (orientation:portrait) and  (max-width: 768px) {
     opacity: 1;
     width: 10vw;
+    border: none;
   }
 `;
 const RightArrow = styled.div`
@@ -33,13 +34,13 @@ const RightArrow = styled.div`
   border-left: 1px solid #D9D9D9;
   cursor: pointer;
   transition: all 1s ease-in;
-  background-color: #000;
   &:hover{
     opacity: 1;
   }
-   @media (max-width: 768px) {
+   @media (orientation:portrait) and  (max-width: 768px) {
     opacity: 1;
     width: 10vw;
+    border: none;
   }
 `;
 const Svg = styled.svg`
@@ -49,6 +50,9 @@ const Svg = styled.svg`
   transform: translate(-50%,-50%);
   color: #D9D9D9;
   width: 20%;
+  @media (orientation:portrait) and  (max-width: 768px) {
+    width: 80%;
+  }
 `;
 const Arrows = () => {
     let clickBefore = false;

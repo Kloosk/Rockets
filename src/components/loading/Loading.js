@@ -19,9 +19,12 @@ const Img = styled.img`
   transform: translate(-50%,-50%);
   width: 30%;
   height: 35%;
-   @media (max-width: 768px) {
-    width: 90%;
+   @media (orientation:portrait) and  (max-width: 768px) {
+    width: 100%;
     height: 35%;
+  }
+   @media only screen and (orientation: landscape)and (max-width: 812px) {
+      width: 70%;
   }
 `;
 const Txt = styled.h1`

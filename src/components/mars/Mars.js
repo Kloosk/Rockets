@@ -15,7 +15,7 @@ const Container = styled.div`
   width: 100vw;
   height: 100vh;
   background-color: #0D0D0D;
-   @media (max-width: 768px) {
+   @media (orientation:portrait) and  (max-width: 768px) {
     height: auto;
   }
 `;
@@ -24,7 +24,7 @@ const Flex = styled.div`
   height: 100vh;
   width: 100vw;
   padding: 15px;
-  @media (max-width: 768px) {
+  @media (orientation:portrait) and  (max-width: 768px) {
     height: auto;
     padding: 0;
     flex-direction: column-reverse;
@@ -42,7 +42,7 @@ const Missionmars = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-   @media (max-width: 768px) {
+   @media (orientation:portrait) and  (max-width: 768px) {
     margin: 0;
     z-index: 1;
     position: static;

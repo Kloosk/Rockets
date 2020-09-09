@@ -12,7 +12,7 @@ const Container = styled.div`
   cursor: pointer;
   transition: transform 0.8s ease-out;
   transform: ${props => props.hide && `translateY(100%)`};
-   @media (max-width: 768px) {
+   @media  (orientation:portrait) and (max-width: 768px) {
     display: none;
   }
    @media only screen and (orientation: landscape)and (max-width: 812px) {

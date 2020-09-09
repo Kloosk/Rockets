@@ -17,6 +17,9 @@ const Container = styled.div`
   @media (max-width: 768px) {
     flex-direction: column-reverse;
   }
+   @media only screen and (orientation: landscape) and (max-width: 825px) and (min-width: 560px){
+    flex-direction: row;
+   }
 `;
 const Slide = () => {
     const URL = `https://api.spacexdata.com/v3/rockets`;

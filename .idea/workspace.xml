@@ -3,6 +3,23 @@
   <component name="ChangeListManager">
     <list default="true" id="9bf67087-242a-4970-9134-b1b8abe87a9b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/arrows/Arrows.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/arrows/Arrows.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/slide/LeftSide.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/slide/LeftSide.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/slide/RightSide.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/slide/RightSide.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/slide/Slide.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/slide/Slide.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/loading/Loading.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/loading/Loading.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/main/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/Main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/main/background/Background.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/background/Background.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/main/rocket/Rocket.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/rocket/Rocket.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/mars/Btn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mars/Btn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/mars/Description.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mars/Description.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/mars/Mars.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mars/Mars.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/mars/Title.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mars/Title.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/model3D/Model3D.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/model3D/Model3D.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/model3D/controls/Controls.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/model3D/controls/Controls.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/model3D/hint/Hint.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/model3D/hint/Hint.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/viewmars/ViewMars.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/viewmars/ViewMars.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,16 +59,16 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.3.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Łukasz\Desktop\space\public" />
-      <recent name="C:\Users\Łukasz\Desktop\space\src\components\loading" />
-      <recent name="C:\Users\Łukasz\Desktop\space\src\components" />
-      <recent name="C:\Users\Łukasz\Desktop\space\src\viewmars\img" />
-      <recent name="C:\Users\Łukasz\Desktop\space\src" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Łukasz\Desktop\space\public" />
       <recent name="C:\Users\Łukasz\Desktop\space\src\components\mars\model\rocket" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Łukasz\Desktop\space\src\components" />
+      <recent name="C:\Users\Łukasz\Desktop\space\public" />
+      <recent name="C:\Users\Łukasz\Desktop\space\src\components\loading" />
+      <recent name="C:\Users\Łukasz\Desktop\space\src\viewmars\img" />
+      <recent name="C:\Users\Łukasz\Desktop\space\src" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -144,6 +161,9 @@
       <workItem from="1599578221793" duration="785000" />
       <workItem from="1599640611926" duration="8253000" />
       <workItem from="1599652160580" duration="3250000" />
+      <workItem from="1599656055429" duration="103000" />
+      <workItem from="1599656451927" duration="1095000" />
+      <workItem from="1599671404969" duration="3848000" />
     </task>
     <servers />
   </component>

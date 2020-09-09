@@ -11,10 +11,13 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-   @media (max-width: 768px) {
+  @media  (orientation:portrait) and (max-width: 768px) {
     width: 100%;
     height: 50%;
   }
+  @media only screen and (orientation: landscape) and (max-width: 825px) and (min-width: 560px){
+    height: 100%;
+   }
 `;
 const Img = styled.div`
     width: 80%;
@@ -28,10 +31,10 @@ const Gallery = styled.div`
   align-items: center;
   justify-content: center;
   width: 90%;
-  @media (max-width: 768px) {
+  @media (orientation:portrait) and  (max-width: 768px) {
     display: none;
   }
-  @media only screen and (orientation: landscape) and (max-width: 812px){
+  @media only screen and (orientation: landscape) and (max-width: 825px) and (min-width: 560px){
     display: none;
    }
   
@@ -52,7 +55,7 @@ const Arrow = styled.button`
   ${Img}:hover &{
     opacity: 1;
   }
-   @media (max-width: 768px) {
+   @media (orientation:portrait) and  (max-width: 768px) {
     opacity: 1;
   }
 `;

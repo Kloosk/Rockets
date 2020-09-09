@@ -11,20 +11,25 @@ const Container = styled.div`
     justify-content: center;
     flex-direction: column;
     padding-left: 20px;
-    @media (max-width: 768px) {
+    @media (orientation:portrait) and  (max-width: 768px) {
       width: 90%;
       height: 50%;
       padding-left: 30px;
+      justify-content: start;
   }
+    @media only screen and (orientation: landscape) and (max-width: 825px) and (min-width: 560px){
+      height: 100%;
+      justify-content: center;
+   }
 `;
 const Title = styled.h1`
  color: #D9D9D9;
  margin-bottom: 10px;
  font-size: 3rem;
-  @media (max-width: 768px) {
+  @media  (orientation:portrait) and (max-width: 768px) {
     font-size: 1.2rem;
   }
-  @media only screen and (orientation: landscape)and (max-width: 812px) {
+  @media (orientation: landscape) and (max-width: 825px) and (min-width: 560px){
     font-size: 1.2rem;
   }
 `;
@@ -33,10 +38,10 @@ const Dsc = styled.p`
  text-align: center;
  margin-bottom: 20px;
  font-size: 2rem;
-  @media (max-width: 768px) {
+  @media (orientation:portrait) and  (max-width: 768px) {
     font-size: 1rem;
   }
-  @media only screen and (orientation: landscape) and (max-width: 812px){
+  @media only screen and (orientation: landscape) and (max-width: 825px) and (min-width: 560px){
     font-size: 1rem;
   }
 `;
@@ -82,11 +87,11 @@ const Btn = styled.button`
    &:hover{
      color: #333333;
    }
-    @media (max-width: 768px) {
+    @media  (orientation:portrait) and (max-width: 768px) {
         font-size: 1rem;
         width: 45%;
     }
-    @media only screen and (orientation: landscape)and (max-width: 812px) {
+    @media only screen and (orientation: landscape) and (max-width: 825px) and (min-width: 560px) {
       font-size: 1rem;
       
     }

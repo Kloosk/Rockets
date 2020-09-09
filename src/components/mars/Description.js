@@ -41,7 +41,7 @@ const Container = styled.article`
 ::-webkit-scrollbar-corner {
   background: transparent;
 }
- @media (max-width: 768px) {
+ @media (orientation:portrait) and  (max-width: 768px) {
     position: static;
     width: 100vw;
     height: auto;
@@ -56,7 +56,7 @@ const H1 = styled.h1`
   :first-child{
     margin-top: 0;
   }
-  @media (max-width: 768px) {
+  @media (orientation:portrait) and  (max-width: 768px) {
     font-size: 1.1rem;
   }
   @media only screen and (orientation: landscape) and (max-width: 812px){
@@ -66,7 +66,7 @@ const H1 = styled.h1`
 const P = styled.p`
   font-size: 1.5rem;
   color: #fff;
-   @media (max-width: 768px) {
+   @media (orientation:portrait) and  (max-width: 768px) {
     font-size: 1rem;
   }
    @media only screen and (orientation: landscape) and (max-width: 812px){

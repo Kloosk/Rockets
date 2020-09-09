@@ -4,7 +4,7 @@ import axios from "axios";
 import Rocket from "./rocket/Rocket";
 import {useSelector} from "react-redux";
 import Back from "./back/Back";
-import Background from "./background/Background";
+import Background from "../background/Background";
 
 const Container = styled.main`
     width: 100vw;

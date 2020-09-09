@@ -9,7 +9,7 @@ const Container = styled.div`
   right: 0;
   padding: 10px;
   width: 20vw;
-   @media (max-width: 768px) {
+   @media (orientation:portrait) and  (max-width: 768px) {
     width: 100vw;
     padding: 0;
   }
@@ -34,7 +34,7 @@ const Txt = styled.h1`
   letter-spacing: 1px;
   text-transform: uppercase;
   margin-right: 5px;
-   @media (max-width: 768px) {
+   @media (orientation:portrait) and  (max-width: 768px) {
     font-size: 1rem;
   }
   @media only screen and (orientation: landscape) and (max-width: 812px){
@@ -54,7 +54,7 @@ const Btn = styled.button`
   &:hover{
     transform: scale(1.1);
   }
-   @media (max-width: 768px) {
+   @media (orientation:portrait) and  (max-width: 768px) {
     width: 60%;
     height: 30%;
   }
