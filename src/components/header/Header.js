@@ -1,10 +1,11 @@
-import React,{useState}from 'react';
+import React from 'react';
 import styled from 'styled-components'
 import Nav from "./nav/Nav";
 import Arrows from "./arrows/Arrows";
 import Slide from "./slide/Slide";
-import {useSelector} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import Footer from "../footer/Footer";
+import {scrollOff, scrollOn} from "../../redux";
 
 const Container = styled.header`
   width: 100vw;
@@ -12,6 +13,7 @@ const Container = styled.header`
   background-color: #0D0D0D;
   transition: transform 1.9s ease;
   transform: ${props => (props.move && `translateX(-100vw)`) || (props.move3d && `translateY(-100vh)`)};
+
 `;
 const QuestionMark = styled.div`
   position: absolute;
@@ -39,6 +41,8 @@ const Btn = styled.button`
 `;
 const Header = () => {
     document.title = "SpaceX Rockets";
+    const dispatch = useDispatch();
+    dispatch(scrollOff());
     const move = useSelector(state => state.move.move);
     const move3d = useSelector(state => state.move3d.move);
     //const [show,setShow] = useState(false);

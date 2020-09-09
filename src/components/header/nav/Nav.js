@@ -31,6 +31,10 @@ const Container = styled.nav`
    @media (max-width: 768px) {
     justify-content: space-around;
   }
+     @media only screen and (orientation: landscape)and (max-width: 812px) {
+      height: 15vh;
+      
+    }
 `;
 
 const Nav = ({curr}) => {

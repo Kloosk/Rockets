@@ -9,22 +9,24 @@ import {GLTFLoader} from "three/examples/jsm/loaders/GLTFLoader";
 import Description from "./Description";
 import Title from "./Title";
 import Btn from "./Btn";
+import {useDispatch} from "react-redux";
+import {scrollOn} from "../../redux";
 const Container = styled.div`
   width: 100vw;
   height: 100vh;
   background-color: #0D0D0D;
    @media (max-width: 768px) {
-    height: 200vh;
-    overflow: scroll;
-    -webkit-overflow-scrolling: touch;
+    height: auto;
   }
 `;
 const Flex = styled.div`
   display: flex;
-  height: 90%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   padding: 15px;
   @media (max-width: 768px) {
+    height: auto;
+    padding: 0;
     flex-direction: column-reverse;
   }
 `;
@@ -42,11 +44,13 @@ const Missionmars = styled.div`
   justify-content: center;
    @media (max-width: 768px) {
     margin: 0;
-    position: absolute;
-    height: 80vh;
-    top: 10vh;
-    left: 0;
+    z-index: 1;
+    position: static;
+    height: 90vh;
     width: 100%;
+  }
+  @media only screen and (orientation: landscape)and (max-width: 812px) {
+   width: 40%;
   }
 `;
 const CanvasStyled = styled(Canvas)`
@@ -54,6 +58,8 @@ const CanvasStyled = styled(Canvas)`
 `;
 const Mars = () => {
     document.title = "SpaceX Mars";
+    const dispatch = useDispatch();
+    dispatch(scrollOn());
     const [mobile,setMobile] = useState(26);
     useEffect(() => {
         if(window.innerWidth < 768){

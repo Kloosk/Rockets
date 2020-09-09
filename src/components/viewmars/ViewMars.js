@@ -4,6 +4,8 @@ import {CubeTextureLoader} from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import styled from "styled-components";
 import BackBtn from "./BackBtn";
+import {useDispatch} from "react-redux";
+import {scrollOff} from "../../redux";
 
 extend({ OrbitControls });
 
@@ -32,6 +34,8 @@ const CameraControls = () => {
 
 function SkyBox() {
     document.title = "SpaceX View Mars";
+    const dispatch = useDispatch();
+    dispatch(scrollOff());
     const { scene } = useThree();
     const loader = new CubeTextureLoader();
     const texture = loader.load([

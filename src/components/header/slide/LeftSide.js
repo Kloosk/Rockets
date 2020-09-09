@@ -24,6 +24,9 @@ const Title = styled.h1`
   @media (max-width: 768px) {
     font-size: 1.2rem;
   }
+  @media only screen and (orientation: landscape)and (max-width: 812px) {
+    font-size: 1.2rem;
+  }
 `;
 const Dsc = styled.p`
  color: #D9D9D9;
@@ -31,6 +34,9 @@ const Dsc = styled.p`
  margin-bottom: 20px;
  font-size: 2rem;
   @media (max-width: 768px) {
+    font-size: 1rem;
+  }
+  @media only screen and (orientation: landscape) and (max-width: 812px){
     font-size: 1rem;
   }
 `;
@@ -77,10 +83,13 @@ const Btn = styled.button`
      color: #333333;
    }
     @media (max-width: 768px) {
-    font-size: 1rem;
-    width: 45%;
-    
-  }
+        font-size: 1rem;
+        width: 45%;
+    }
+    @media only screen and (orientation: landscape)and (max-width: 812px) {
+      font-size: 1rem;
+      
+    }
 `;
 const Background = styled.div`
   z-index: -1;

@@ -28,9 +28,13 @@ const Gallery = styled.div`
   align-items: center;
   justify-content: center;
   width: 90%;
-   @media (max-width: 768px) {
+  @media (max-width: 768px) {
     display: none;
   }
+  @media only screen and (orientation: landscape) and (max-width: 812px){
+    display: none;
+   }
+  
 `;
 const Arrow = styled.button`
   z-index: 5;

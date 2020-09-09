@@ -13,6 +13,12 @@ const Container = styled.div`
     width: 100vw;
     padding: 0;
   }
+  @media only screen and (orientation: landscape)and (max-width: 812px) {
+   left: 0;
+   width: 50vw;
+   padding: 0;
+   
+  }
 `;
 const Flex = styled.div`
   display: flex;
@@ -31,6 +37,10 @@ const Txt = styled.h1`
    @media (max-width: 768px) {
     font-size: 1rem;
   }
+  @media only screen and (orientation: landscape) and (max-width: 812px){
+   font-size: 1rem;
+   width: 15%;
+  }
 `;
 const Btn = styled.button`
   cursor: pointer;
@@ -47,6 +57,11 @@ const Btn = styled.button`
    @media (max-width: 768px) {
     width: 60%;
     height: 30%;
+  }
+   @media only screen and (orientation: landscape) and (max-width: 812px){
+   width: 50px;
+   height: 25px;
+   font-size: 1rem;
   }
 `;
 

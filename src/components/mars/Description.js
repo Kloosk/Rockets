@@ -3,15 +3,17 @@ import styled from 'styled-components'
 
 const Container = styled.article`
   width: 60%;
-  height: 100%;
+  height: 90%;
   display: flex;
   flex-direction: column;
   padding: 10px 25px 25px 25px;
   overflow-y: auto;
   overflow-x: hidden;
   ::-webkit-scrollbar {
+  padding: 0;
   width: 11px;
   height: 11px;
+  background-color: #0D0D0D;
 }
 ::-webkit-scrollbar-button {
   width: 0;
@@ -40,10 +42,11 @@ const Container = styled.article`
   background: transparent;
 }
  @media (max-width: 768px) {
-    margin-top: 100vh;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
+    position: static;
+    width: 100vw;
+    height: auto;
+    opacity: 0.8;
+    overflow: hidden;
   }
 `;
 const H1 = styled.h1`
@@ -56,11 +59,17 @@ const H1 = styled.h1`
   @media (max-width: 768px) {
     font-size: 1.1rem;
   }
+  @media only screen and (orientation: landscape) and (max-width: 812px){
+    font-size: 1.2rem;
+  }
 `;
 const P = styled.p`
   font-size: 1.5rem;
   color: #fff;
    @media (max-width: 768px) {
+    font-size: 1rem;
+  }
+   @media only screen and (orientation: landscape) and (max-width: 812px){
     font-size: 1rem;
   }
 `;

@@ -11,6 +11,12 @@ const ViewBtn = styled.button`
     cursor: pointer;
    @media (max-width: 768px) {
     font-size: 1.5rem;
+    position: relative;
+    z-index: 1;
+  }
+   @media only screen and (orientation: landscape) and (max-width: 812px){
+    margin-top: 15px;
+    font-size: 1rem;
   }
 `;
 const Href = styled(Link)`

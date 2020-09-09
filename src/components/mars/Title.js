@@ -6,13 +6,18 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;  
+  
 `;
 const H1 = styled.h1`
   letter-spacing: 20px;
   font-size: 5rem;
   color: #fff;
    @media (max-width: 768px) {
-    font-size: 2rem;
+    font-size: 3rem;
+    letter-spacing: 3px;
+  }
+    @media only screen and (orientation: landscape)and (max-width: 812px) {
+    font-size: 1.2rem;
     letter-spacing: 3px;
   }
 `;

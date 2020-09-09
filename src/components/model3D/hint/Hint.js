@@ -15,6 +15,9 @@ const Container = styled.div`
    @media (max-width: 768px) {
     display: none;
   }
+   @media only screen and (orientation: landscape)and (max-width: 812px) {
+   display: none;
+  }
 `;
 const Flex = styled.div`
   display: flex;

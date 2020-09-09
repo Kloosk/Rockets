@@ -18,9 +18,12 @@ const Title = styled.h1`
   grid-column: 1/2;
   border-bottom: 2px solid #ACAAA9;
   width: 80%;
-   @media (max-width: 768px) {
+  @media (max-width: 768px) {
     display: none;
   }
+  @media only screen and (orientation: landscape) and (max-width: 812px){
+    display: none;
+   }
 `;
 const Info = styled.div`
   font-size: 2rem;
@@ -31,8 +34,14 @@ const Info = styled.div`
   padding: 5px;
    @media (max-width: 768px) {
     font-size: 1rem;
-    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 10px;
   }
+  @media only screen and (orientation: landscape) and (max-width: 812px){
+      font-size: 1rem;
+      
+   }
  
 `;
 const Wiki  = styled.a`
@@ -43,18 +52,32 @@ const Wiki  = styled.a`
   font-size: 2rem;
   border: 2px solid #ACAAA9;
   padding: 5px;
+  @media (max-width: 768px) {
+    padding: 5px 8px;
+    font-size: 1.1rem;
+  }
+  @media only screen and (orientation: landscape)and (max-width: 812px) {
+    font-size: 1.1rem;
+    padding: 5px 8px;
+    grid-column: 1/2;
+  }
+  
 `;
 const Infot = styled.p`
     width: 20%;
      @media (max-width: 768px) {
-        width: 35%;
-  }
+       width: auto;
+       margin-bottom: 2px;
+  
 `;
 const Infocont = styled.div`
     grid-column: 2/4;
-     @media (max-width: 768px) {
+    @media (max-width: 768px) {
     grid-column: 1/4;
   }
+   @media only screen and (orientation: landscape) and (max-width: 812px){
+      grid-column: 1/4;
+   }
 `;
 const Rocket = (props) => {
     const addDot = (cost) => {

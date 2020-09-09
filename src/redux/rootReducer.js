@@ -9,6 +9,7 @@ import scaleSetReducer from "./scale/scaleReducer";
 import loadReducer from "./loading/loadingReducer";
 import loadPhotoReducer from "./loadPhoto/loadPhotosReducer";
 import blockBtnReducer from "./blockBtn/blockBtnReducer";
+import scrollReducer from "./scroll/scrollReducer";
 
 const rootReducer = combineReducers({
    slide: changeSlideReducer,
@@ -20,7 +21,8 @@ const rootReducer = combineReducers({
    scale: scaleSetReducer,
    load: loadReducer,
    loadingPhoto: loadPhotoReducer,
-   block: blockBtnReducer
+   block: blockBtnReducer,
+   scroll: scrollReducer
 });
 
 export default rootReducer
