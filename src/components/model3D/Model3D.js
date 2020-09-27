@@ -30,7 +30,7 @@ const rocketsURL = [
         ambientLight: false,
         intensity: 0.5,
         scale: 6,
-        positionY: -15
+        positionY: 0
     },
     {
         name: 'starship',
