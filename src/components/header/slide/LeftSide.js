@@ -41,9 +41,15 @@ const Dsc = styled.p`
   @media (orientation:portrait) and  (max-width: 768px) {
     font-size: 1rem;
   }
-  @media only screen and (orientation: landscape) and (max-width: 825px) and (min-width: 560px){
+  @media (orientation:portrait) and  (max-width: 321px) {
+    font-size: 0.85rem;
+  }
+  @media only screen and (orientation: landscape) and (max-width: 825px) and (min-width: 570px){
     font-size: 1rem;
   }
+  @media only screen and (orientation: landscape) and (max-width: 569px) and (min-width: 300px) {//iphone 5
+      font-size: 0.85rem;
+    }
 `;
 const Btn = styled.button`
    overflow: hidden;
@@ -91,9 +97,16 @@ const Btn = styled.button`
         font-size: 1rem;
         width: 45%;
     }
-    @media only screen and (orientation: landscape) and (max-width: 825px) and (min-width: 560px) {
+    @media (orientation:portrait) and  (max-width: 321px) {//iphone 5
       font-size: 1rem;
-      
+      height: 45px;
+  }
+    @media only screen and (orientation: landscape) and (max-width: 825px) and (min-width: 570px) {
+      font-size: 1rem;
+     }
+    @media only screen and (orientation: landscape) and (max-width: 569px) and (min-width: 300px) {//iphone 5
+      font-size: 1rem;
+      height: 30px;
     }
 `;
 const Background = styled.div`

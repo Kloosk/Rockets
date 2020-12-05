@@ -21,6 +21,10 @@ const Container = styled.button`
       color: #fff;
       border-color:#fff;
   }
+   @media (orientation:portrait) and  (max-width: 321px) {//iphone5
+      font-size: 1rem;
+      height: 45px;
+  }
 `;
 const Svg = styled.svg`
   margin-right: 7px;

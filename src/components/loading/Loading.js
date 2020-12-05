@@ -36,6 +36,12 @@ const Txt = styled.h1`
     text-align: center;
     font-size: 1.5rem;
     color: #fff;
+     @media (orientation:portrait) and  (max-width: 321px) {//iphone5
+      font-size: 1rem;
+  }
+   @media only screen and (orientation: landscape) and (max-width: 569px) and (min-width: 300px) {//iphone 5
+      font-size: 1rem;
+    }
 `;
 const Loading = ({loading}) => {
     return (

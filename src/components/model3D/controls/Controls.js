@@ -58,6 +58,11 @@ const Btn = styled.button`
     width: 60%;
     height: 30%;
   }
+   @media (orientation:portrait) and  (max-width: 321px) {//iphone5
+      width: 70px;
+      height: 30px;
+      font-size: 1.1rem;
+  }
    @media only screen and (orientation: landscape) and (max-width: 812px){
    width: 50px;
    height: 25px;
