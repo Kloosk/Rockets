@@ -19,14 +19,15 @@ const Main = () => {
     const [rocket,setRocket] = useState([]);
     const move = useSelector(state => state.move.move);
     useEffect(() => {
-        axios.get(URL)
-            .then(res =>{
+        (async () => {
+            try {
+                const res = await axios.get(URL);
                 setRockets(res.data);
                 setRocket(res.data[0]);
-            })
-            .catch(err => {
-                console.log(err);
-            })
+            } catch (e) {
+                console.log(e);
+            }
+        })();
     },[]);
     useEffect(() => {
         setRocket(rockets[numOfSlide]);

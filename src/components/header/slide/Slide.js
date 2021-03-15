@@ -29,15 +29,16 @@ const Slide = () => {
     const [rocket,setRocket] = useState([]);
     const numOfSlide = useSelector(state => state.slide.numOfSlide);
     const wayMove = useSelector(state => state.ways.wayToMove);
-    useEffect(() => {
-        axios.get(URL)
-            .then(res =>{
+    useEffect( () => {
+        (async () => {
+            try {
+                const res = await axios.get(URL);
                 setRockets(res.data);
                 setRocket(res.data[0]);
-            })
-            .catch(err => {
-                console.log(err);
-            })
+            } catch (e) {
+                console.log(e);
+            }
+        })();
     },[]);
 
     useEffect(() => {
